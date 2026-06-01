@@ -2,34 +2,32 @@
 let randomNumber = Math.floor(Math.random() * 3 + 1);
 console.log('Wylosowana liczba to: ' + randomNumber);
 
-let computerMove = 'nieznany ruch';
-
-if (randomNumber == 1) {
-    computerMove = 'kamień';
-} else if (randomNumber == 2) {
-    computerMove = 'papier';
-} else if (randomNumber == 3) {
-    computerMove = 'nożyce';
+// 1. Definicja funkcji przypisującej nazwę ruchu do numeru
+function getMoveName(moveId) {
+    if (moveId == 1) {
+        return 'kamień';
+    } else if (moveId == 2) {
+        return 'papier';
+    } else if (moveId == 3) {
+        return 'nożyce';
+    }
+    
+    printMessage('Nie znam ruchu o id ' + moveId + '.');
+    return 'nieznany ruch';
 }
 
+// 2. Ruch komputera z wykorzystaniem funkcji
+// (zakładamy, że zmienna randomNumber została wcześniej wylosowana od 1 do 3)
+let computerMove = getMoveName(randomNumber);
 printMessage('Mój ruch to: ' + computerMove);
 
-// Pobranie i odczytanie ruchu gracza
+// 3. Pobranie i odczytanie ruchu gracza
 let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
 console.log('Gracz wpisał: ' + playerInput);
 
-let playerMove = 'nieznany ruch';
-
-if (playerInput == '1') {
-    playerMove = 'kamień';
-} else if (playerInput == '2') {
-    playerMove = 'papier';
-} else if (playerInput == '3') {
-    playerMove = 'nożyce';
-}
-
+// 4. Ruch gracza z wykorzystaniem tej samej funkcji
+let playerMove = getMoveName(playerInput);
 printMessage('Twój ruch to: ' + playerMove);
-
 // LOGIKA WYNIKU GRY
 
 if (playerMove == 'nieznany ruch') {
