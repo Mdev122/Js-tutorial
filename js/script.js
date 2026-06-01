@@ -63,18 +63,3 @@ function displayResult(argComputerMove, argPlayerMove) {
     }
 }
 
-// 2. Ruch komputera z wykorzystaniem funkcji
-// (zakładamy, że zmienna randomNumber została wcześniej wylosowana od 1 do 3)
-let computerMove = getMoveName(randomNumber);
-printMessage('Mój ruch to: ' + computerMove);
-
-// 3. Pobranie i odczytanie ruchu gracza
-let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
-console.log('Gracz wpisał: ' + playerInput);
-
-// 4. Ruch gracza z wykorzystaniem tej samej funkcji
-let playerMove = getMoveName(playerInput);
-printMessage('Twój ruch to: ' + playerMove);
-
-// NOWOŚĆ: Wywołanie funkcji sprawdzającej wynik z przekazaniem odpowiednich zmiennych
-displayResult(computerMove, playerMove);
