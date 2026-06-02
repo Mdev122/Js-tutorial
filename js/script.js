@@ -54,5 +54,3 @@ function playGame(playerInput) {
     displayResult(computerMove, playerMove);
 }
 
-// Wywołanie całej gry z ruchem gracza jako nożyce (3)
-playGame(3);
