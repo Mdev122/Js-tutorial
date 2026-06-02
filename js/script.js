@@ -56,15 +56,18 @@ function playGame(playerInput) {
     displayResult(computerMove, playerMove);
 }
 
-// Słuchacze zdarzeń dla przycisków HTML
+// Słuchacze zdarzeń dla przycisków HTML z komunikatami printMessage
 document.getElementById('play-rock').addEventListener('click', function() {
+    printMessage('Kliknięto Kamień - uruchamiam grę...');
     playGame(1);
 });
 
 document.getElementById('play-paper').addEventListener('click', function() {
+    printMessage('Kliknięto Papier - uruchamiam grę...');
     playGame(2);
 });
 
 document.getElementById('play-scissors').addEventListener('click', function() {
+    printMessage('Kliknięto Nożyce - uruchamiam grę...');
     playGame(3);
 });
