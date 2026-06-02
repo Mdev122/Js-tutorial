@@ -1,0 +1,83 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+/* Główny kontener gry */
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+/* Kontener na przyciski */
+#buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+/* Nowoczesny wygląd przycisków */
+button {
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #4f46e5; /* Elegancki fiolet/niebieski */
+    border: none;
+    border-radius: 12px;
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 4px 6px rgba(79, 70, 229, 0.2);
+}
+
+/* Efekt po najechaniu myszką (Hover) */
+button:hover {
+    background-color: #4338ca;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(79, 70, 229, 0.3);
+}
+
+/* Efekt po kliknięciu (Active) */
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(79, 70, 229, 0.2);
+}
+
+/* Stylowanie unikalnych kolorów dla każdego przycisku (opcjonalnie dla lepszego UX) */
+#play-rock { background-color: #64748b; box-shadow: 0 4px 6px rgba(100, 116, 139, 0.2); }
+#play-rock:hover { background-color: #475569; }
+
+#play-paper { background-color: #0ea5e9; box-shadow: 0 4px 6px rgba(14, 165, 233, 0.2); }
+#play-paper:hover { background-color: #0284c7; }
+
+#play-scissors { background-color: #f43f5e; box-shadow: 0 4px 6px rgba(244, 63, 94, 0.2); }
+#play-scissors:hover { background-color: #e11d48; }
+
+/* Sekcja z komunikatami wyniku */
+#messages {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f8fafc;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    font-size: 15px;
+    line-height: 1.5;
+}
