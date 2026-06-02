@@ -21,8 +21,7 @@ function playGame(playerInput) {
     let computerMove = getMoveName(randomNumber);
     printMessage('Mój ruch to: ' + computerMove);
 
-    // 3. Pobranie i odczytanie ruchu gracza - usunięte/zakomentowane prompt
-    // let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
+    // 3. Pobranie i odczytanie ruchu gracza
     console.log('Gracz wpisał: ' + playerInput);
 
     // 4. Ruch gracza z wykorzystaniem tej samej funkcji
@@ -53,4 +52,3 @@ function playGame(playerInput) {
     // Wywołanie funkcji sprawdzającej wynik
     displayResult(computerMove, playerMove);
 }
-
