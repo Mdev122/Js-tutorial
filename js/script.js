@@ -1,4 +1,7 @@
 function playGame(playerInput) {
+    // Czyszczenie dotychczasowych komunikatów przed nową rozgrywką
+    clearMessages();
+
     // Losowanie ruchu komputera
     let randomNumber = Math.floor(Math.random() * 3 + 1);
     console.log('Wylosowana liczba to: ' + randomNumber);
@@ -52,7 +55,8 @@ function playGame(playerInput) {
     // Wywołanie funkcji sprawdzającej wynik
     displayResult(computerMove, playerMove);
 }
-// Słuchacze zdarzeń dla przycisków gry
+
+// Słuchacze zdarzeń dla przycisków HTML
 document.getElementById('play-rock').addEventListener('click', function() {
     playGame(1);
 });
