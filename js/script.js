@@ -44,6 +44,7 @@
 
         displayResult(computerMove, playerMove);
     };
+    // funkcja logiki wyniku działą prawidłowo sekwencje wygranych przegranych oraz remis
 
     // Słuchacze zdarzeń z bezpośrednim wywołaniem gry
     document.getElementById('play-rock').addEventListener('click', function() {
