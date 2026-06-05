@@ -20,6 +20,7 @@
 
         printMessage('Mój ruch to: ' + computerMove);
         printMessage('Twój ruch to: ' + playerMove);
+        //Powyższa funkcja działa prawidłowo nie wyświetla cyfr tylko poprawne słowa kamień,papoer,nożyce
 
         // Funkcja wyświetlająca wynik zamieniona na funkcję anonimową
         const displayResult = function(argComputerMove, argPlayerMove) {
