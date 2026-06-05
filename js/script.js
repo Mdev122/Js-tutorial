@@ -2,6 +2,7 @@
     // Główna funkcja gry zapisana jako funkcja anonimowa w stałej
     const playGame = function(playerInput) {
         clearMessages();
+        //Powyższa funkcja działą prawidłowo i nie duplikuje tekstu
 
         // Losowanie i definicja nazwy ruchu komputera w jednym miejscu
         const randomNumber = Math.floor(Math.random() * 3 + 1);
