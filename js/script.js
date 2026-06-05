@@ -60,3 +60,4 @@
     });
     //słuchacze działają prawidłowo
 }
+//cały kod został przetestowany brak błędów
